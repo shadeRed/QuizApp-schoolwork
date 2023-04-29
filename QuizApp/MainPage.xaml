@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizApp.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#F42069" Padding="24" CornerRadius="0">
+            <Label Text="Quiz App" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <StackLayout Margin="10,100,10,20">
+            <Label MaxLines="2" LineBreakMode="WordWrap" x:Name="quiz_question" Text="" />
+        </StackLayout>
+        <FlexLayout Margin="10,0,10,0">
+            <Button x:Name="btn_true" Text="Yes" FlexLayout.Grow="1" Clicked="btn_true_Clicked" />
+            <Button x:Name="btn_false" Text="No" FlexLayout.Grow="1" Clicked="btn_false_Clicked" />
+            <Button x:Name="btn_reset" Text="Reset" FlexLayout.Grow="1" Clicked="btn_reset_Clicked" />
+        </FlexLayout>
+    </StackLayout>
+
+</ContentPage>
